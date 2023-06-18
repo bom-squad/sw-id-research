@@ -45,3 +45,6 @@ Some insights from the mapping:
 
 - run ```python cvs2db.py``` to upload a csv to a database
 
+## Data sources
+CVE data is from NVD.
+OSV data is from Google's OSV database (downloaded from gcloud bucket)
