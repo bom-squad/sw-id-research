@@ -1,0 +1,71 @@
+{
+  "id": "GHSA-95jp-77w6-qj52",
+  "summary": "Cross-site Scripting in python-cjson",
+  "details": "Python-cjson 1.0.5 does not properly handle a ['/'] argument to cjson.encode, which makes it easier for remote attackers to conduct certain cross-site scripting (XSS) attacks involving Firefox and the end tag of a SCRIPT element.",
+  "aliases": [
+    "CVE-2009-4924"
+  ],
+  "modified": "2023-02-16T23:27:17.786741Z",
+  "published": "2021-12-06T18:17:45Z",
+  "database_specific": {
+    "cwe_ids": [
+      "CWE-79"
+    ],
+    "severity": "MODERATE",
+    "github_reviewed": true,
+    "github_reviewed_at": "2021-12-06T18:17:00Z",
+    "nvd_published_at": null
+  },
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-4924"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-db/tree/main/vulns/python-cjson/PYSEC-2010-26.yaml"
+    },
+    {
+      "type": "WEB",
+      "url": "http://pypi.python.org/pypi/python-cjson/"
+    },
+    {
+      "type": "WEB",
+      "url": "http://t3.dotgnu.info/blog/insecurity/quotes-dont-help.html"
+    }
+  ],
+  "affected": [
+    {
+      "package": {
+        "name": "python-cjson",
+        "ecosystem": "PyPI",
+        "purl": "pkg:pypi/python-cjson"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.1.0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "1.0.0",
+        "1.0.1",
+        "1.0.2",
+        "1.0.3",
+        "1.0.4",
+        "1.0.5"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/12/GHSA-95jp-77w6-qj52/GHSA-95jp-77w6-qj52.json"
+      }
+    }
+  ],
+  "schema_version": "1.3.0"
+}

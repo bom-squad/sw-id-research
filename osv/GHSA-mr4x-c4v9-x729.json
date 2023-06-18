@@ -1,0 +1,99 @@
+{
+  "id": "GHSA-mr4x-c4v9-x729",
+  "summary": "Moderate severity vulnerability that affects aiohttp-session",
+  "details": "aio-libs aiohttp-session version 2.6.0 and earlier contains a Other/Unknown vulnerability in EncryptedCookieStorage and NaClCookieStorage that can result in Non-expiring sessions / Infinite lifespan. This attack appear to be exploitable via Recreation of a cookie post-expiry with the same value.",
+  "aliases": [
+    "CVE-2018-1000814"
+  ],
+  "modified": "2023-02-16T23:13:39.795109Z",
+  "published": "2018-12-20T22:01:46Z",
+  "database_specific": {
+    "cwe_ids": [
+      "CWE-613"
+    ],
+    "severity": "MODERATE",
+    "github_reviewed": true,
+    "github_reviewed_at": "2020-06-16T21:47:02Z",
+    "nvd_published_at": null
+  },
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000814"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/aio-libs/aiohttp-session/issues/325"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/aio-libs/aiohttp-session/pull/331"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-mr4x-c4v9-x729"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/aio-libs/aiohttp-session"
+    }
+  ],
+  "affected": [
+    {
+      "package": {
+        "name": "aiohttp-session",
+        "ecosystem": "PyPI",
+        "purl": "pkg:pypi/aiohttp-session"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "2.7.0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "0.0.1",
+        "0.1.0",
+        "0.1.1",
+        "0.1.2",
+        "0.2.0",
+        "0.3.0",
+        "0.4.0",
+        "0.5.0",
+        "0.7.0",
+        "0.7.1",
+        "0.8.0",
+        "1.0.0",
+        "1.0.1",
+        "1.1.0",
+        "1.2.0",
+        "1.2.1",
+        "2.0.0",
+        "2.0.1",
+        "2.1.0",
+        "2.2.0",
+        "2.3.0",
+        "2.4.0",
+        "2.5.1",
+        "2.6.0"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/12/GHSA-mr4x-c4v9-x729/GHSA-mr4x-c4v9-x729.json"
+      }
+    }
+  ],
+  "schema_version": "1.3.0",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ]
+}

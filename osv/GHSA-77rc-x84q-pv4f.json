@@ -1,0 +1,74 @@
+{
+  "id": "GHSA-77rc-x84q-pv4f",
+  "summary": "Improper Certificate Validation in Apache Airflow",
+  "details": "The LDAP auth backend (airflow.contrib.auth.backends.ldap_auth) prior to Apache Airflow 1.10.1 was misconfigured and contained improper checking of exceptions which disabled server certificate checking.",
+  "aliases": [
+    "CVE-2018-20245"
+  ],
+  "modified": "2023-02-16T23:32:22.994141Z",
+  "published": "2019-01-25T16:19:19Z",
+  "database_specific": {
+    "cwe_ids": [
+      "CWE-295"
+    ],
+    "severity": "HIGH",
+    "github_reviewed": true,
+    "github_reviewed_at": "2020-06-16T21:21:58Z",
+    "nvd_published_at": null
+  },
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-20245"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-77rc-x84q-pv4f"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.apache.org/thread.html/b549c7573b342a6e457e5a3225c33054244343927bbfb2a4cdc4cf73@%3Cdev.airflow.apache.org%3E"
+    }
+  ],
+  "affected": [
+    {
+      "package": {
+        "name": "apache-airflow",
+        "ecosystem": "PyPI",
+        "purl": "pkg:pypi/apache-airflow"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.10.1"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "1.10.0",
+        "1.10.1b1",
+        "1.10.1rc2",
+        "1.8.1",
+        "1.8.2",
+        "1.8.2rc1",
+        "1.9.0"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2019/01/GHSA-77rc-x84q-pv4f/GHSA-77rc-x84q-pv4f.json"
+      }
+    }
+  ],
+  "schema_version": "1.3.0",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ]
+}

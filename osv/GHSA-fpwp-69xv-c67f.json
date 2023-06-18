@@ -1,0 +1,96 @@
+{
+  "id": "GHSA-fpwp-69xv-c67f",
+  "summary": "Moderate severity vulnerability that affects aiohttp-session",
+  "details": "The pypi package aiohttp-session before 2.4.0 contained a Session Fixation vulnerability in load_session function for RedisStorage  that can result in Session Hijacking. This attack appear to be exploitable via Any method that allows setting session cookies (?session=<>, or meta tags or script tags with Set-Cookie).",
+  "aliases": [
+    "CVE-2018-1000519"
+  ],
+  "modified": "2023-02-16T23:25:14.814875Z",
+  "published": "2018-09-13T15:46:40Z",
+  "database_specific": {
+    "cwe_ids": [
+      "CWE-384"
+    ],
+    "severity": "MODERATE",
+    "github_reviewed": true,
+    "github_reviewed_at": "2020-06-16T21:35:06Z",
+    "nvd_published_at": null
+  },
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000519"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/aio-libs/aiohttp-session/issues/272"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-fpwp-69xv-c67f"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/aio-libs/aiohttp-session"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/aio-libs/aiohttp-session/blob/master/aiohttp_session/redis_storage.py#L60"
+    }
+  ],
+  "affected": [
+    {
+      "package": {
+        "name": "aiohttp-session",
+        "ecosystem": "PyPI",
+        "purl": "pkg:pypi/aiohttp-session"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "2.4.0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "0.0.1",
+        "0.1.0",
+        "0.1.1",
+        "0.1.2",
+        "0.2.0",
+        "0.3.0",
+        "0.4.0",
+        "0.5.0",
+        "0.7.0",
+        "0.7.1",
+        "0.8.0",
+        "1.0.0",
+        "1.0.1",
+        "1.1.0",
+        "1.2.0",
+        "1.2.1",
+        "2.0.0",
+        "2.0.1",
+        "2.1.0",
+        "2.2.0",
+        "2.3.0"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/09/GHSA-fpwp-69xv-c67f/GHSA-fpwp-69xv-c67f.json"
+      }
+    }
+  ],
+  "schema_version": "1.3.0",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N"
+    }
+  ]
+}

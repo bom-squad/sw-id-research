@@ -1,0 +1,73 @@
+{
+  "id": "GHSA-pg2f-r7pc-6fxx",
+  "summary": "Cross-Site Request Forgery in MicroPyramid Django CRM",
+  "details": "Multiple CSRF issues exist in MicroPyramid Django CRM 0.2.1 via /change-password-by-admin/, /api/settings/add/, /cases/create/, /change-password-by-admin/, /comment/add/, /documents/1/view/, /documents/create/, /opportunities/create/, and /login/.",
+  "aliases": [
+    "CVE-2019-11457"
+  ],
+  "modified": "2023-02-16T23:28:19.182084Z",
+  "published": "2019-09-11T22:57:57Z",
+  "database_specific": {
+    "cwe_ids": [
+      "CWE-352"
+    ],
+    "severity": "HIGH",
+    "github_reviewed": true,
+    "github_reviewed_at": "2019-08-28T15:35:37Z",
+    "nvd_published_at": "2019-08-27T15:15:00Z"
+  },
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-11457"
+    },
+    {
+      "type": "WEB",
+      "url": "https://www.netsparker.com/blog/web-security/"
+    },
+    {
+      "type": "WEB",
+      "url": "http://packetstormsecurity.com/files/154219/Django-CRM-0.2.1-Cross-Site-Request-Forgery.html"
+    },
+    {
+      "type": "WEB",
+      "url": "http://seclists.org/fulldisclosure/2019/Aug/30"
+    }
+  ],
+  "affected": [
+    {
+      "package": {
+        "name": "django-crm",
+        "ecosystem": "PyPI",
+        "purl": "pkg:pypi/django-crm"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "last_affected": "0.2.1"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "0.2.0",
+        "0.2.1"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2019/09/GHSA-pg2f-r7pc-6fxx/GHSA-pg2f-r7pc-6fxx.json"
+      }
+    }
+  ],
+  "schema_version": "1.3.0",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ]
+}

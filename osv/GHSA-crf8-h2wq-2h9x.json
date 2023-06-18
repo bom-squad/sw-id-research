@@ -1,0 +1,93 @@
+{
+  "id": "GHSA-crf8-h2wq-2h9x",
+  "summary": "WASM3 Improper Input Validation vulnerability",
+  "details": "WASM3 v0.5.0 was discovered to contain a segmentation fault via the component `op_Select_i32_srs` in `wasm3/source/m3_exec.h`.",
+  "aliases": [
+    "CVE-2022-39974"
+  ],
+  "modified": "2023-02-16T23:27:17.815861Z",
+  "published": "2022-09-21T00:00:38Z",
+  "database_specific": {
+    "cwe_ids": [
+      "CWE-20"
+    ],
+    "severity": "LOW",
+    "github_reviewed": true,
+    "github_reviewed_at": "2022-09-21T21:10:20Z",
+    "nvd_published_at": "2022-09-20T18:15:00Z"
+  },
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-39974"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/wasm3/wasm3/issues/344"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/wasm3/wasm3/issues/379"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/wasm3/wasm3"
+    }
+  ],
+  "affected": [
+    {
+      "package": {
+        "name": "pywasm3",
+        "ecosystem": "PyPI",
+        "purl": "pkg:pypi/pywasm3"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "last_affected": "0.5.0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "0.0.1",
+        "0.0.2",
+        "0.4.8",
+        "0.4.9",
+        "0.5.0"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/09/GHSA-crf8-h2wq-2h9x/GHSA-crf8-h2wq-2h9x.json"
+      }
+    },
+    {
+      "package": {
+        "name": "wasm3",
+        "ecosystem": "crates.io",
+        "purl": "pkg:cargo/wasm3"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "last_affected": "0.5.0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/09/GHSA-crf8-h2wq-2h9x/GHSA-crf8-h2wq-2h9x.json"
+      }
+    }
+  ],
+  "schema_version": "1.3.0"
+}

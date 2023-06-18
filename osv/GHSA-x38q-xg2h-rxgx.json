@@ -1,0 +1,84 @@
+{
+  "id": "GHSA-x38q-xg2h-rxgx",
+  "summary": "Regular Expression Denial of Service in Leo Editor",
+  "details": "Leo Editor v6.2.1 was discovered to contain a regular expression denial of service (ReDoS) vulnerability in the component plugins/importers/dart.py.",
+  "aliases": [
+    "CVE-2020-23478"
+  ],
+  "modified": "2023-02-16T22:53:50.025941Z",
+  "published": "2021-09-23T23:14:28Z",
+  "database_specific": {
+    "cwe_ids": [
+      "CWE-1333",
+      "CWE-697"
+    ],
+    "severity": "HIGH",
+    "github_reviewed": true,
+    "github_reviewed_at": "2021-09-23T16:37:27Z",
+    "nvd_published_at": "2021-09-22T20:15:00Z"
+  },
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-23478"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/leo-editor/leo-editor/issues/1597"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/leo-editor/leo-editor/"
+    }
+  ],
+  "affected": [
+    {
+      "package": {
+        "name": "leo",
+        "ecosystem": "PyPI",
+        "purl": "pkg:pypi/leo"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "last_affected": "6.2.1"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "4.11-final",
+        "5.0-final",
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.7",
+        "5.7.2",
+        "5.7.3",
+        "5.8",
+        "5.9",
+        "6.0",
+        "6.1",
+        "6.2",
+        "6.2.1"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/09/GHSA-x38q-xg2h-rxgx/GHSA-x38q-xg2h-rxgx.json"
+      }
+    }
+  ],
+  "schema_version": "1.3.0",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ]
+}
